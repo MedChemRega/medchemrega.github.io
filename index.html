@@ -1,7 +1,25 @@
 <html>
 <head>
-<meta http-equiv="refresh" content="0;url=http://medchem.rega.kuleuven.be">
+<!--meta http-equiv="refresh" content="0;url=http://medchem.rega.kuleuven.be"-->
 </head>
 <body>
+<iframe src="https://medchemrega.github.io/test.txt" width=200 height=200 frameborder=0 id="myframe" onload="setTimeout(getIframeContent,1000)">
+</iframe>
+<SCRIPT>
+function getIframeContent(frameId) {
+    let frameObj = document.getElementById('myframe');
+//	alert(window.frames['myframe'].contentDocument);
+	
+    let frameContent = frameObj.contentWindow.document.body.innerHTML;
+            alert("frame content : " + frameContent);
+}
+</SCRIPT>
+<PRE>
+this is the text:
+
+<div ID='mydiv'>123
+</div>
+
+</PRE>
 </body>
 </html>

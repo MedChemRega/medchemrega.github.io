@@ -11,8 +11,10 @@ function getIframeContent(frameId) {
 //	alert(window.frames['myframe'].contentDocument);
 	
     let frameContent = frameObj.contentWindow.document.body.innerHTML;
+	let atag= frameObj.contentWindow.document.getElementsByTagName('pre');
 	window.document.getElementById('mydiv').innerHTML = frameContent;
 	console.log(frameContent);
+	console.log(atag[0].innerHTML);
 }
 </SCRIPT>
 this is the text:

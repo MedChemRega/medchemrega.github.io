@@ -3,18 +3,15 @@
 <!--meta http-equiv="refresh" content="0;url=http://medchem.rega.kuleuven.be"-->
 </head>
 <body>
-<iframe src="https://medchemrega.github.io/test.txt" width=200 height=200 frameborder=0 id="myframe" onload="getIframeContent()">
-</iframe>
+<iframe src="https://medchemrega.github.io/test.txt" style="display:none;" id="myframe" onload="getIframeContent()"></iframe>
 <SCRIPT>
 function getIframeContent(frameId) {
     let frameObj = document.getElementById('myframe');
-//	alert(window.frames['myframe'].contentDocument);
-	
     let frameContent = frameObj.contentWindow.document.body.innerHTML;
-	let atag= frameObj.contentWindow.document.getElementsByTagName('pre');
+	let framePre = frameObj.contentWindow.document.getElementsByTagName('pre');
 	console.log(frameContent);
-	console.log(atag[0].innerHTML);
-	window.document.getElementById('mydiv').innerHTML = atag[0].innerHTML;
+	console.log(framePre[0].innerHTML);
+	window.document.getElementById('mydiv').innerHTML = framePre[0].innerHTML;
 }
 </SCRIPT>
 this is the text2:

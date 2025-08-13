@@ -8,8 +8,6 @@
 function getIframeContent(frameId) {
     let frameObj = document.getElementById('myframe');
     let frameContent = frameObj.contentWindow.document.body.innerHTML;
-//	let framePre = frameObj.contentWindow.document.getElementsByTagName('pre');
-	console.log(frameContent);
 	window.document.getElementById('mydiv').innerHTML = frameContent;
 }
 </SCRIPT>

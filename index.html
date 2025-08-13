@@ -11,6 +11,7 @@ function getIframeContent(frameId) {
 //	alert(window.frames['myframe'].contentDocument);
 	
     let frameContent = frameObj.contentWindow.document.body.innerHTML;
+	document.getElementById('mydiv').innerHTML = 'hi';
             alert("frame content : " + frameContent);
 }
 </SCRIPT>

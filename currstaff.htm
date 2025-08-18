@@ -27,12 +27,11 @@
 function getIframeContent(frameId) {
     let frameObj = document.getElementById(frameId);
     let frameContent = frameObj.contentWindow.document.body.innerHTML;
-	alert(frameContent);
 	window.document.getElementById(frameId + "_").innerHTML = frameContent;
 }
 </SCRIPT>
-<div ID='myhead_'>1</div>
-<div ID='myframe_'>2</div>
-<div ID='myfoot_'>3</div>
+<div ID='myhead_'></div>
+<div ID='myframe_'></div>
+<div ID='myfoot_'></div>
 </body>
 </html>

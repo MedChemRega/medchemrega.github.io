@@ -29,6 +29,7 @@ function getIframeContent(frameId) {
     let frameContent = frameObj.contentWindow.document.body.innerHTML;
 	alert(frameContent);
 	window.document.getElementById(frameId).innerHTML = frameContent;
+	window.document.getElementById('myframe').innerHTML = "OK";
 }
 </SCRIPT>
 <div ID='myhead'>1</div>

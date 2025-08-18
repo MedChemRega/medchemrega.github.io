@@ -27,6 +27,7 @@
 function getIframeContent(frameId) {
     let frameObj = document.getElementById(frameId);
     let frameContent = frameObj.contentWindow.document.body.innerHTML;
+	alert(frameContent);
 	window.document.getElementById(frameId).innerHTML = frameContent;
 }
 </SCRIPT>

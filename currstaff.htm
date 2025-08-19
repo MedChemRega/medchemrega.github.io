@@ -18,11 +18,6 @@
 <!--link rel="canonical" href="http://rega.kuleuven.be/ibi/rg_go" />
 <link rel="shortcut icon" type="image/x-icon" href="http://rega.kuleuven.be/favicon.ico" />
 <link rel="apple-touch-icon" href="http://rega.kuleuven.be/touch_icon.png" /-->
-</head>
-<body dir="ltr" class="template-document_view portaltype-document site-ibi section-rg_go subsection-index icons-on userrole-anonymous at_gbiomed_rega">
-<iframe src="https://medchemrega.github.io/wrap.html" style="display:none;" id="myhead" onload="getIframeContent('myhead')"></iframe>
-<!--iframe src="https://medchemrega.github.io/currstaff.html" style="display:none;" id="myframe" onload="getIframeContent('myframe')"></iframe-->
-<!--iframe src="https://medchemrega.github.io/myfoot.html" style="display:none;" id="myfoot" onload="getIframeContent('myfoot')"></iframe-->
 <SCRIPT>
 function getIframeContent(frameId) {
     let frameObj = document.getElementById(frameId);
@@ -30,9 +25,6 @@ function getIframeContent(frameId) {
 	window.document.getElementById("mywrap").innerHTML = frameContent;
 	console.log("OK1");
 }
-</SCRIPT>
-<iframe src="https://medchemrega.github.io/currstaff.html" style="display:none;" id="myframe" onload="getIframeInclude('myframe')"></iframe>
-<SCRIPT>
 function getIframeInclude(frameId) {
     let frameObj = document.getElementById(frameId);
     let frameContent = frameObj.contentWindow.document.body.innerHTML;
@@ -41,6 +33,10 @@ function getIframeInclude(frameId) {
 	console.log("OK2");
 }
 </SCRIPT>
+</head>
+<body dir="ltr" class="template-document_view portaltype-document site-ibi section-rg_go subsection-index icons-on userrole-anonymous at_gbiomed_rega">
+<iframe src="https://medchemrega.github.io/wrap.html" style="display:none;" id="myhead" onload="getIframeContent('myhead')"></iframe>
+<iframe src="https://medchemrega.github.io/currstaff.html" style="display:none;" id="myframe" onload="getIframeInclude('myframe')"></iframe>
 <span ID='mywrap'></span>
 </body>
 </html>

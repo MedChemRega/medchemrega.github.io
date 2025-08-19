@@ -6,8 +6,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="hasClassNoIndex" content="true" /> 
 
+<!--script type="text/javascript" src="/medchem/html5shiv.min.js"></script-->
 <link rel="stylesheet" type="text/css" href="styles.css" media="screen,projection" />
-<link rel="icon" type="image/png" href="https://stijl.kuleuven.be/2016/img/favicon.png" />
+<!--script type="text/javascript" src="/medchem/jquery.js"></script-->
+<!--script type="text/javascript" src="/medchem/slides.js"></script-->
+
+<link rel="icon" type="image/png" href="favicon.png" />
 <link href="//fonts.googleapis.com/css?family=Material+Icons|Open+Sans:400italic,600italic,700italic,400,700,600|Merriweather:400italic,400,700" rel="stylesheet" type="text/css" />
 
 <base href="/" /><!--[if lt IE 7]></base><![endif]-->
@@ -15,9 +19,13 @@
 <meta name="Last-Modified" content="2019-08-01T10:10:10" />
 <meta name="Language" content="en" />
 <link rel="stylesheet" type="text/css" media="all" href="https://stijl.kuleuven.be/2016/release/latest/css/wms.css" />
-<link rel="canonical" href="http://rega.kuleuven.be/ibi/rg_go" />
+<!--link rel="canonical" href="http://rega.kuleuven.be/ibi/rg_go" />
 <link rel="shortcut icon" type="image/x-icon" href="http://rega.kuleuven.be/favicon.ico" />
 <link rel="apple-touch-icon" href="http://rega.kuleuven.be/touch_icon.png" />
+<link rel="search" href="http://medchem.rega.kuleuven.be/@@search" title="Search this site" /-->
+<SCRIPT>
+alert(window.location.search);
+</SCRIPT>
 </head>
 
 <body dir="ltr" class="template-document_view portaltype-document site-ibi section-rg_go subsection-index icons-on userrole-anonymous at_gbiomed_rega"><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -120,18 +128,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
            
 <nav class="nav-tabs nav-more" id="local-header">
  <ul id="portal-globalnav">
- <li><a href="research.html">research</a></li>
- <li><a href="publi.html" title="">publications</a></li>
- <li><a href="educ.html" title="">education</a></li>
- <li><a href="currstaff.hml" title="">staff</a></li>
- <li><a href="alumni.html" title="">alumni</a></li>
+ <li><a href="?research">research</a></li>
+ <li><a href="?publi" title="">publications</a></li>
+ <li><a href="?educ" title="">education</a></li>
+ <li><a href="?currstaff" title="">staff</a></li>
+ <li><a href="?alumni" title="">alumni</a></li>
  </nav>
             
 </div>
 </nav>
  
   <div role="main">
-
     <div class="container">
       <div class="row">
            <!-- middenzone -->
@@ -139,12 +146,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
                 <div class="">
                         <div id="content">
                              <div id="content-core">
-<INCLUDE>
+<MYINCLUDE>
                              </div>
                         </div>
                 </div>
         </div>
-           
 <!-- rechterbalk - nieuws -->
 <div id="nieuws" class="col-xs-12 col-md-4 col-block">
 <div class="noindex static card card-primary">
@@ -167,12 +173,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
   </ul>
 </div>
 </div>
-
-<INTRAINC>
-
 </div> <!-- nieuws -->
-
-   
       </div><!-- end row -->
     </div><!-- end container -->
 
@@ -527,5 +528,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
   </div>
 </aside><script src="https://stijl.kuleuven.be/2016/release/latest/js/all.min.js"></script></body>
 </html>
+
 
 

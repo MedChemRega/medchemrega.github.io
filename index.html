@@ -24,23 +24,25 @@
 <link rel="apple-touch-icon" href="http://rega.kuleuven.be/touch_icon.png" />
 <link rel="search" href="http://medchem.rega.kuleuven.be/@@search" title="Search this site" /-->
 <SCRIPT>
-function getIframe() {
- let mysearch = window.location.search.slice(1);
- document.getElementById("myframe").src = "https://medchemrega.github.io/" + myserach + ".htm";
- let frameObj = document.getElementById("myframe");
- let frameContent = frameObj.contentWindow.document.body.innerHTML;
- window.document.getElementById("content-core").innerHTML = frameContent;
+function loadIframe() {
+  let frameObj = document.getElementById("myframe");
+  let frameContent = frameObj.contentWindow.document.body.innerHTML;
+  window.document.getElementById("content-core").innerHTML = frameContent;
 }
 </SCRIPT>
 </head>
 
-<body dir="ltr" class="template-document_view portaltype-document site-ibi section-rg_go subsection-index icons-on userrole-anonymous at_gbiomed_rega" onLoad="getInclude();">
+<body dir="ltr" class="template-document_view portaltype-document site-ibi section-rg_go subsection-index icons-on userrole-anonymous at_gbiomed_rega" onLoad="loadIframe();">
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-PDHQ4Z');
 </script>
+<SCRIPT>
+let mysearch = window.location.search.slice(1);
+document.write('<IFRAME src="' + "https://medchemrega.github.io/" + mysearch + ".htm" + '" style="display: none;" id="myframe"></IFRAME>');
+</SCRIPT>
 <div class="l-page">
     <nav class="global-header hidden-print">
     <div class="container">
@@ -535,7 +537,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
     </a>
   </div>
 </aside><script src="https://stijl.kuleuven.be/2016/release/latest/js/all.min.js"></script>
-<IFRAME src="" style="display: none;" id="myframe" onload="getIframe()"></IFRAME>
 </body>
 </html>
 

@@ -20,20 +20,20 @@
 <link rel="apple-touch-icon" href="http://rega.kuleuven.be/touch_icon.png" /-->
 </head>
 <body>
-<iframe src="https://medchemrega.github.io/wrap.html" style="display:none;" id="myhead" onload="getIframeContent('mywrap')"></iframe>
+<iframe src="https://medchemrega.github.io/wrap.html" style="display:none;" id="myhead" onload="getIframeContent('myhead')"></iframe>
 <!--iframe src="https://medchemrega.github.io/currstaff.html" style="display:none;" id="myframe" onload="getIframeContent('myframe')"></iframe-->
 <!--iframe src="https://medchemrega.github.io/myfoot.html" style="display:none;" id="myfoot" onload="getIframeContent('myfoot')"></iframe-->
 <SCRIPT>
 function getIframeContent(frameId) {
     let frameObj = document.getElementById(frameId);
     let frameContent = frameObj.contentWindow.document.body.innerHTML;
-	window.document.getElementById(frameId + "_").innerHTML = frameContent;
+	window.document.getElementById("mywrap").innerHTML = frameContent;
 }
 </SCRIPT>
 <span ID='mywrap_'></span>
 <iframe src="https://medchemrega.github.io/currstaff.html" style="display:none;" id="myframe" onload="getIframeInclude('myframe')"></iframe>
 <SCRIPT>
-function getIframeContent(frameId) {
+function getIframeInclude(frameId) {
     let frameObj = document.getElementById(frameId);
     let frameContent = frameObj.contentWindow.document.body.innerHTML;
 	window.document.getElementById("mywrap_").innerHTML = frameContent.replace("<MYINCLUDE>",frameContent);

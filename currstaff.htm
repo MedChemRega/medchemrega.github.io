@@ -28,6 +28,7 @@ function getIframeContent(frameId) {
     let frameObj = document.getElementById(frameId);
     let frameContent = frameObj.contentWindow.document.body.innerHTML;
 	window.document.getElementById("mywrap").innerHTML = frameContent;
+	console.log("OK1");
 }
 </SCRIPT>
 <iframe src="https://medchemrega.github.io/currstaff.html" style="display:none;" id="myframe" onload="getIframeInclude('myframe')"></iframe>
@@ -37,6 +38,7 @@ function getIframeInclude(frameId) {
     let frameContent = frameObj.contentWindow.document.body.innerHTML;
 	let wrapContent = window.document.getElementById("mywrap").innerHTML
 	window.document.getElementById("mywrap").innerHTML = wrapContent.replace("<MYINCLUDE>",frameContent);
+	console.log("OK2");
 }
 </SCRIPT>
 <span ID='mywrap'></span>

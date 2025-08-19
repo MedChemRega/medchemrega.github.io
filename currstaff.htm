@@ -23,14 +23,14 @@ function getIframeContent(frameId) {
     let frameObj = document.getElementById(frameId);
     let frameContent = frameObj.contentWindow.document.body.innerHTML;
 	window.document.getElementById("mywrap").innerHTML = frameContent;
-	console.log("OK1");
+	console.log("OK10");
 }
 function getIframeInclude(frameId) {
     let frameObj = document.getElementById(frameId);
     let frameContent = frameObj.contentWindow.document.body.innerHTML;
 	let wrapContent = window.document.getElementById("mywrap").innerHTML
 	window.document.getElementById("mywrap").innerHTML = wrapContent.replace("<MYINCLUDE>",frameContent);
-	console.log("OK2");
+	console.log("OK20");
 }
 </SCRIPT>
 </head>

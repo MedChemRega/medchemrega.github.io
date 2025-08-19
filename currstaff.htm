@@ -35,7 +35,8 @@ function getIframeContent(frameId) {
 function getIframeInclude(frameId) {
     let frameObj = document.getElementById(frameId);
     let frameContent = frameObj.contentWindow.document.body.innerHTML;
-	window.document.getElementById("mywrap").innerHTML = frameContent.replace("<MYINCLUDE>",frameContent);
+	let wrapContent = window.document.getElementById("mywrap").innerHTML
+	window.document.getElementById("mywrap").innerHTML = wrapContent.replace("<MYINCLUDE>",frameContent);
 }
 </SCRIPT>
 <span ID='mywrap'></span>

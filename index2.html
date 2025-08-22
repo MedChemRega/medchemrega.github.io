@@ -15,7 +15,7 @@
 function loadIframe() {
   let frameObj = document.getElementById("myframe");
   let frameContent = frameObj.contentWindow.document.body.innerHTML;
-  window.document.getElementById("content-core").innerHTML = frameContent;
+  document.getElementById("content-core").innerHTML = frameContent;
 }
 </SCRIPT>
 </head>
@@ -105,7 +105,7 @@ document.write('<IFRAME src="' + 'https://medchemrega.github.io/' + mysearch + '
 
 <div class="kul-card-color card card-primary">
 <div class="card-body">
-<div id"content-core">
+<div id="content-core">
 
 </div>
 

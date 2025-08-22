@@ -4,13 +4,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Medicinal Chemistry - Rega Institute</title>
-<SCRIPT>
-function loadIframe() {
-  let frameObj = document.getElementById("myframe");
-  let frameContent = frameObj.contentWindow.document.body.innerHTML;
-  window.document.getElementById("content-core").innerHTML = frameContent;
-}
-</SCRIPT>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon" type="image/png" href="img/favicon.png" />
@@ -18,13 +11,20 @@ function loadIframe() {
 <link data-bundle="kuleuven-fonts-css" href="https://fonts.googleapis.com/css2?family=Material+Icons&amp;family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" media="all" rel="stylesheet" type="text/css" />
 <link data-bundle="kuleuven-housestyle-css" href="https://stijl.kuleuven.be/releases/600/css/wms.css" media="all" rel="stylesheet" type="text/css" />
 <link href="styles.css" media="all" rel="stylesheet" type="text/css" />
-
+<SCRIPT>
+function loadIframe() {
+  let frameObj = document.getElementById("myframe");
+  let frameContent = frameObj.contentWindow.document.body.innerHTML;
+  window.document.getElementById("content-core").innerHTML = frameContent;
+}
+</SCRIPT>
 </head>
 
 <body id="visual-portal-wrapper" onload="loadIframe();">
 <SCRIPT>
 let mysearch = window.location.search.slice(1);
 mysearch = (mysearch + "0" == "0") ? "main" : mysearch;
+console.log('<IFRAME src="' + 'https://medchemrega.github.io/' + mysearch + '.html' + '" style="display: none;" id="myframe"></IFRAME>');
 document.write('<IFRAME src="' + 'https://medchemrega.github.io/' + mysearch + '.html' + '" style="display: none;" id="myframe"></IFRAME>');
 </SCRIPT>
 <section id="edit-bar" role="toolbar"></section>

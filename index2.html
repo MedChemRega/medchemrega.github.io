@@ -15,7 +15,7 @@
 function loadIframe() {
   let frameObj = document.getElementById("myframe");
   let frameContent = frameObj.contentWindow.document.body.innerHTML;
-  document.getElementById("content-core").innerHTML = "HAHA" + frameContent;
+  document.getElementById("content-core").innerHTML = frameContent;
 }
 </SCRIPT>
 </head>
@@ -25,7 +25,6 @@ function loadIframe() {
 let mysearch = window.location.search.slice(1);
 mysearch = (mysearch + "0" == "0") ? "main" : mysearch;
 document.write('<IFRAME src="' + 'https://medchemrega.github.io/' + mysearch + '.html' + '" style="display:none;" id="myframe"></IFRAME>');
-    alert(mysearch);
 </SCRIPT>
 
 <div class="l-page">
@@ -66,19 +65,14 @@ document.write('<IFRAME src="' + 'https://medchemrega.github.io/' + mysearch + '
     </nav>
   </div>
 </nav>
- <!-- END LOCAL HEADER -->
+<!-- END LOCAL HEADER -->
  
- 
- 
- 
-
 <!-- MAIN CONTENT-->
 <div class="main">
 <div class= "container">
-<div CLASS="myrow" style="position:relative;border:1px solid blue;overflow:hidden;z-index:90;">
+<div CLASS="myrow" style="position:relative;overflow:hidden;z-index:90;margin-top:10px;">
 
-
-       <DIV style="float:right;position:relative;width:400px;z-index:100;border:1px solid red;">
+<DIV style="float:right;position:relative;width:400px;z-index:100;">
 <div class="noindex static card card-gray">
 <div class="card-block">
   <h3>Links</h3>
@@ -99,13 +93,10 @@ document.write('<IFRAME src="' + 'https://medchemrega.github.io/' + mysearch + '
   </ul>
 </div>
 </div>
-     </DIV>
+</DIV>
 
-test
-<SPAN id="content-core">123</SPAN>
+<SPAN id="content-core"></SPAN>
 </div><!-- myrow -->
-
-
 
 <!-- LOCAL FOOTER-->
 <footer class="local-footer">
@@ -125,7 +116,6 @@ test
 </div><!-- container -->
 </div>
 <!-- END MAIN CONTENT-->
-
 
 <!-- GLOBAL FOOTER -->
 <footer class="global-footer noindex hidden-print">
@@ -185,7 +175,6 @@ test
   </div>
 </footer><!-- END GLOBAL FOOTER -->
 
-      
 </div><!-- end l-page -->
 </body>
 </html>

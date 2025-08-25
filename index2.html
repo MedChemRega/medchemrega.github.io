@@ -15,16 +15,17 @@
 function loadIframe() {
   let frameObj = document.getElementById("myframe");
   let frameContent = frameObj.contentWindow.document.body.innerHTML;
-  document.getElementById("content-core").innerHTML = frameContent;
+  document.getElementById("content-core").innerHTML = "HAHA" + frameContent;
 }
 </SCRIPT>
 </head>
 
-<body id="visual-portal-wrapper" onnload="loadIframe();">
+<body id="visual-portal-wrapper" onload="loadIframe();">
 <SCRIPT>
 let mysearch = window.location.search.slice(1);
 mysearch = (mysearch + "0" == "0") ? "main" : mysearch;
-document.write('<IFRAME src="' + 'https://medchemrega.github.io/' + mysearch + '.html' + '" style="display: none;" id="myframe"></IFRAME>');
+document.write('<IFRAME src="' + 'https://medchemrega.github.io/' + mysearch + '.html' + '" style="display:none;" id="myframe"></IFRAME>');
+    alert(mysearch);
 </SCRIPT>
 
 <div class="l-page">
@@ -74,31 +75,36 @@ document.write('<IFRAME src="' + 'https://medchemrega.github.io/' + mysearch + '
 <!-- MAIN CONTENT-->
 <div class="main">
 <div class= "container">
-<div class="row" style="border:1px solid blue;float:left;overflow:hidden;">
+<div CLASS="myrow" style="position:relative;border:1px solid blue;overflow:hidden;z-index:90;">
 
-       <DIV style="float:right;width:400px;position:relative;max-height:200px;z-index:100;border:1px solid red;clear:left;">
-     xxx x x <BR>xxx x xxx xxxx xxx<BR> x xxx xxx x x xxx<BR> xx x x xxx x<BR>  x x x 
+
+       <DIV style="float:right;position:relative;width:400px;z-index:100;border:1px solid red;">
+<div class="noindex static card card-gray">
+<div class="card-block">
+  <h3>Links</h3>
+   <ul>
+   <li><a href="http://rega.kuleuven.be">Rega Institute</a>
+   <li><a href="http://pharm.kuleuven.be">Pharmaceutical Sciences</a>
+   <li><a href="http://gbiomed.kuleuven.be/english/research/50000715/">Dep. Pharmacy and Pharmacology</a></li>&#13;
+   </ul>
+</div>
+</div>
+
+<div class="noindex static card card-gray">
+<div class="card-block">
+  <h3>Contact</h3>
+  <ul>
+  <li><a href="?contact">Contact info</a>
+  <li><a href="?map">Map</a>
+  </ul>
+</div>
+</div>
      </DIV>
 
-    
- hello flojh fljd flkjs flksjf lksdjf lsdjf dslkfj dslkfj sdlkfj sdlkfj sdlfj lfj sljfs lkjf <P>              
-hello flojh fljd flkjs flksjf lksdjf lsdjf dslkfj dslkfj sdlkfj sdlkfj sdlfj lfj sljfs lkjf <P>              
-hello flojh fljd flkjs flksjf lksdjf lsdjf dslkfj dslkfj sdlkfj sdlkfj sdlfj lfj sljfs lkjf <P>              
-hello flojh fljd flkjs flksjf lksdjf lsdjf dslkfj dslkfj sdlkfj sdlkfj sdlfj lfj sljfs lkjf <P>              
-hello flojh fljd flkjs flksjf lksdjf lsdjf dslkfj dslkfj sdlkfj sdlkfj sdlfj lfj sljfs lkjf <P>              
-hello flojh fljd flkjs flksjf lksdjf lsdjf dslkfj dslkfj sdlkfj sdlkfj sdlfj lfj sljfs lkjf <P>              
-hello flojh fljd flkjs flksjf lksdjf lsdjf dslkfj dslkfj sdlkfj sdlkfj sdlfj lfj sljfs lkjf <P>              
-hello flojh fljd flkjs flksjf lksdjf lsdjf dslkfj dslkfj sdlkfj sdlkfj sdlfj lfj sljfs lkjf <P>              
-hello flojh fljd flkjs flksjf lksdjf lsdjf dslkfj dslkfj sdlkfj sdlkfj sdlfj lfj sljfs lkjf <P>              
-hello flojh fljd flkjs flksjf lksdjf lsdjf dslkfj dslkfj sdlkfj sdlkfj sdlfj lfj sljfs lkjf <P>              
-hello flojh fljd flkjs flksjf lksdjf lsdjf dslkfj dslkfj sdlkfj sdlkfj sdlfj lfj sljfs lkjf <P>              
-v
+test
+<SPAN id="content-core">123</SPAN>
+</div><!-- myrow -->
 
-
-
- 
-                 
-</div><!-- row -->
 
 
 <!-- LOCAL FOOTER-->

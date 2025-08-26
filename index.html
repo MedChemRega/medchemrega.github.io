@@ -16,6 +16,9 @@ function loadIframe() {
   let frameObj = document.getElementById("myframe");
   let frameContent = frameObj.contentWindow.document.body.innerHTML;
   document.getElementById("content-core").innerHTML = frameContent;
+  let frameObj = document.getElementById("mydate");
+  let frameContent = frameObj.contentWindow.document.body.innerHTML;
+  document.getElementById("content-date").innerHTML = frameContent;
 }
 </SCRIPT>
 </head>
@@ -25,6 +28,7 @@ function loadIframe() {
 let mysearch = window.location.search.slice(1);
 mysearch = (mysearch + "0" == "0") ? "main" : mysearch;
 document.write('<IFRAME src="' + 'https://medchemrega.github.io/' + mysearch + '.html' + '" style="display:none;" id="myframe"></IFRAME>');
+<IFRAME src="https://medchemrega.github.io/lastupdate.html' + '" style="display:none;" id="mydate"></IFRAME>
 </SCRIPT>
 
 <div class="l-page">
@@ -103,11 +107,9 @@ document.write('<IFRAME src="' + 'https://medchemrega.github.io/' + mysearch + '
 <footer class="local-footer">
   <div class="footer-info">
     <div class="container">
-      <p class="lastmodified" style="margin-bottom: 0">Last update:
-01-03-2024
-      </p>
+      <p class="lastmodified" style="margin-bottom: 0">Last update: <span id='content-date></span></p>
       <div class="reactionfull">
-        <p><span>Comments on the content and accessibility:</span> <a class="reaction" href="http://www.kuleuven.be/wieiswie/nl/person/0004247">E. Lescrinier</a></p>
+        <p>Comments on the content and accessibility: <a class="reaction" href="http://www.kuleuven.be/wieiswie/nl/person/0004247">E. Lescrinier</a></p>
       </div>
     </div>
   </div>

@@ -11,26 +11,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Icons&amp;family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" media="all" rel="stylesheet" type="text/css" />
 <link href="styles.css" media="all" rel="stylesheet" type="text/css" />
 <link href="https://stijl.kuleuven.be/releases/600/css/wms.css" media="all" rel="stylesheet" type="text/css" />
-<SCRIPT>
-function loadIframe() {
-  let frameObj = document.getElementById("myframe");
-  let frameContent = frameObj.contentWindow.document.body.innerHTML;
-  document.getElementById("content-core").innerHTML = frameContent;
-  frameObj = document.getElementById("mydate");
-  frameContent = frameObj.contentWindow.document.body.innerHTML;
-  document.getElementById("content-date").innerHTML = frameContent;
-}
-</SCRIPT>
 </head>
 
-<body id="visual-portal-wrapper" onload="loadIframe();">
-<SCRIPT>
-let mysearch = window.location.search.slice(1);
-mysearch = (mysearch + "0" == "0") ? "main" : mysearch;
-document.write('<IFRAME src="' + 'https://medchemrega.github.io/' + mysearch + '.html' + '" style="display:none;" id="myframe"></IFRAME>');
-</SCRIPT>
-<IFRAME src="https://medchemrega.github.io/lastupdate.html" style="display:none;" id="mydate"></IFRAME>
-
+<body id="visual-portal-wrapper">
 <div class="l-page">
 
 <!-- GLOBAL HEADER -->
@@ -58,11 +41,11 @@ document.write('<IFRAME src="' + 'https://medchemrega.github.io/' + mysearch + '
     </nav>
     <nav class="nav-tabs nav-more collapse" id="local-header">
       <ul id="portal-globalnav">
-        <li><a href="?research">research</a></li>
-        <li><a href="?publi">publications</a></li>
-        <li><a href="?educ">education</a></li>
-        <li><a href="?currstaff">staff</a></li>
-        <li><a href="?alumni">alumni</a></li>
+        <li><a href="research.html">research</a></li>
+        <li><a href="publi.html">publications</a></li>
+        <li><a href="educ.html">education</a></li>
+        <li><a href="currstaff.html">staff</a></li>
+        <li><a href="alumni.html">alumni</a></li>
       </ul>
     </nav>
   </div>
@@ -91,21 +74,105 @@ document.write('<IFRAME src="' + 'https://medchemrega.github.io/' + mysearch + '
 <div class="card-block">
   <h3>Contact</h3>
   <ul>
-  <li><a href="?contact">Contact info</a>
-  <li><a href="?map">Map</a>
+  <li><a href="contact.html">Contact info</a>
+  <li><a href="map.html">Map</a>
   </ul>
 </div>
 </div>
 </DIV>
 
-<SPAN id="content-core"></SPAN>
+<h3 align="left">Laboratory for Medicinal Chemistry</h3>
+
+The Medicinal Chemistry group located on the 8th and 9th floor of the <A HREF='http://rega.kuleuven.be'>Rega Institute for Medical Research</A>, is part of the <A HREF='http://pharm.kuleuven.be/'>Faculty of Pharmaceutical Sciences</A>.
+Since 1990, its interests lay in the field of peptide, nucleoside and oligonucleotide chemistry. New substances are synthesized, analyzed and evaluated for activity <I>in vitro</I>.
+In addition, molecular modeling, NMR and mass spectrometry facilities are available and these units perform supporting research.
+The Medicinal Chemistry group is also involved in the teaching program of the Faculty of Pharmaceutical Sciences both at the undergraduate and graduate level.<BR>&nbsp;<BR>
+
+<div class="col-xs-12 col-md-8">
+<div class="card card-gray">
+<div class="card-body" style="padding:5px;margin:1px;">
+
+<TABLE style="max-width:800px;all:unset;border:1px;border-spacing:0px;">
+<TR>
+<TD WIDTH="150px" ALIGN="center" style="border:0px;">
+<p><a href="jr.html" CLASS="all jr">&nbsp;</a><br>
+<a href="jr.html" CLASS="name">prof. dr. Jef<BR>Rozenski</a></p>
+</TD>
+<TD WIDTH="150px" ALIGN="center" style="border:0px;">
+<p><a href="el.html" CLASS="all el">&nbsp;</a><br>
+<a href="el.html" CLASS="name">prof. dr. Eveline<BR>Lescrinier</a></p>
+</TD>
+<TD WIDTH="150px" ALIGN="center" style="border:0px;">
+<p><a href="mf.html" CLASS="all mf">&nbsp;</a><br>
+<a href="mf.html" CLASS="name">prof. dr. Mathy<BR>Froeyen</a></p>
+</TD>
+<TD WIDTH="150px" ALIGN="center" style="border:0px;">
+<p><a href="vp.html" CLASS="all vp">&nbsp;</a><br>
+<a href="vp.html" CLASS="name">prof. dr. Vitor<BR>Pinheiro</a></p>
+</TD>
+<TD WIDTH="150px" ALIGN="center" style="border:0px;">
+<p><a href="pv.html" CLASS="all pv">&nbsp;</a><br>
+<a href="pv.html" CLASS="name">prof. dr. Peter<BR>Verwilst</a></p>
+</TD>
+</TR>
+<TR>
+<TD WIDTH="150px" ALIGN="center" style="border:0px;">
+<p><a href="ph.html" CLASS="all ph">&nbsp;</a><br>
+<a href="ph.html" CLASS="name">em. prof. dr. Piet<BR>Herdewyn</a></p>
+</TD>
+<TD WIDTH="150px" ALIGN="center" style="border:0px;">
+<p><a href="ava.html" CLASS="all ava">&nbsp;</a><br>
+<a href="ava.html" CLASS="name">em. prof. dr. Arthur<BR>Van Aerschot</a></p>
+</TD>
+</TR>
+</TABLE>
+
+</div>
+</div>
+</div>
+
+<h4>directed evolution and biodesign engineering</h4>
+<div style="margin-bottom: 12pt;">
+Biology has exploited two polymers, nucleic acids and proteins, to develop a vast range of functions and to catalyse numerous chemical reactions required for life. Nonetheless, despite this diversity, biology only delivers a small fraction of the available chemistry and possible functionalities. Our group combines biological engineering strategies with directed evolution to assemble new molecules and develop new applications, using biology as a starting point in development. A focus of the group is on the development of novel genetic materials based on xenobiotic nucleic acids (XNAs), XNA molecular biology tools and XNA applications. [<A HREF='http://pinheirolab.com'>more...</A>]
+</div>
+
+<h4>chemical synthesis</h4>
+<div style="margin-bottom: 12pt;">
+Synthetic work focuses mainly on using nucleosides and nucleotides as starting point for drug development (antiviral, antitumoral, antibiotics).
+In addition several projects focus on development of heterocyclic drug canditates. A large effort is likewise carried out with nucleoside constructs in relation to synthetic biology.
+Another group focuses on inhibitors of tRNA synthetases as otential antibiotics.
+Finally, peptide and oligonucleotide constructs are prepared with modified building blocks for various purposes (antisense, siRNA, biochemical tools). [<A HREF='http://verwilstlab.be'>more...</A>]
+</div>
+
+<h4>biochemical techniques</h4>
+<div style="margin-bottom: 12pt;">
+The laboratory of Medicinal Chemistry of the Rega Institute is equipped with temperature controlled UV for evaluation of Tm of new antisense or ribozyme constructs. Basic evaluations like in vitro biological activity of new ribozymes, enzymatic stability of new antisense constructs and inhibition of enzymes are done in house. In addition unnatural nucleosides like hexitol containing analogues are evaluated for their recognition potential by natural as well as mutated enzymes, in a search for new biochemical tools. Automated DNA synthesis (ABI 392), gel electrophoresis and phosphor imaging facilities are available.<P>
+</div>
+
+<h4>NMR</h4>
+<div style="margin-bottom: 12pt;">
+NMR research is focused on biomolecular structure determination (proteins and nucleic acids). The technique is also used to characterize synthesized compounds as a support ongoing chemistry projects.<P>
+</div>
+
+<h4>mass spectrometry</h4>
+<div style="margin-bottom: 12pt;">
+Mass spectrometry is used for the identification of the synthesis intermediates and final compounds. Research is mainly focused on the study of posttranscriptional modifications in RNA. In addition electrochemical experiments with on-line coupling with mass spectrometry are performed for the prediction and identification of oxidized drug metabolites.
+Services are offered for accurate mass measurements, structure elucidation and quantification with HPLC/MS. <A HREF='?jr'>[more...]</A><P>
+</div>
+
+<h4>molecular modeling</h4>
+<div style="margin-bottom: 12pt;">
+Molecular modeling techniques like molecular docking, determination of small molecule - receptor interactions, 3D model building of new DNA constructs, and more, are currently feasible techniques performed in our laboratory.<P>
+</div>
+
+
 </div><!-- myrow -->
 
 <!-- LOCAL FOOTER-->
 <footer class="local-footer">
   <div class="footer-info">
     <div class="container">
-      <p class="lastmodified" style="margin-bottom: 0">Last update: <span id="content-date"></span></p>
+      <p class="lastmodified" style="margin-bottom: 0">Last update: 2025-08-27</p>
       <div class="reactionfull">
         <p>Comments on the content and accessibility: <a class="reaction" href="http://www.kuleuven.be/wieiswie/nl/person/0004247">E. Lescrinier</a></p>
       </div>
@@ -179,4 +246,5 @@ document.write('<IFRAME src="' + 'https://medchemrega.github.io/' + mysearch + '
 </div><!-- end l-page -->
 </body>
 </html>
+
 

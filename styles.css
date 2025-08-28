@@ -1,73 +1,76 @@
-a.all,p.all {
+p.all,span.all {
 background-image: url("img/photos.png");
 width:75px;
 height:100px;
-text-indent:-999em;
-border-style:none;
-display:block;
+border:none;
+display:inline-block;
 overflow:hidden;
 transition: width 0s;
+margin:auto;
+display:table;
 }
 
-a.name {
-font-size: 0.9em;
+p.more {
+float:left;
 }
 
-a.jr {
+span.jr {
 background-position: 0px -100px;
 }
-p.jr,a.jr:hover{
+p.jr,span.jr:hover { 
 background-position: 0px 0px;
 }
 
-a.ph {
+span.ph {
 background-position: -75px -100px;
 }
-p.ph,a.ph:hover {
+p.ph,span.ph:hover {
 background-position: -75px 0px;
 }
 
-a.mf {
+span.mf {
 background-position: -150px -100px;
 }
-p.mf,a.mf:hover {
+p.mf,span.mf:hover {
 background-position: -150px 0px;
 }
 
-a.el {
+span.el {
 background-position: -225px -100px;
 }
-p.el,a.el:hover {
+p.el,span.el:hover {
 background-position: -225px 0px;
 }
 
-a.ava {
+span.ava {
 background-position: -300px -100px;
 }
-p.ava,a.ava:hover {
+p.ava,span.ava:hover {
 background-position: -300px 0px;
 }
 
-a.vp {
+span.vp {
 background-position: -375px -100px;
 }
-p.vp,a.vp:hover {
+p.vp,span.vp:hover {
 background-position: -375px 0px;
 }
 
-a.pv {
+span.pv {
 background-position: -450px -100px;
 }
-p.pv,a.pv:hover {
+p.pv,span.pv:hover {
 background-position: -450px 0px;
 }
 
-a.mc:hover {
-background-position: -375px 0px;
+figcaption {
+text-align:center;
+font-size: 0.9em;
 }
-a.mc {
-width: 150px;
-height: 90px;
-background-position: -375px -100px;
-text-align: center;
+
+figure {
+float:left;
+width:150px;
+margin:0pt;
+padding:0pt;"
 }

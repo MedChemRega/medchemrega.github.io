@@ -1,3 +1,47 @@
+@media screen and (max-width: 979px) {
+ .mysmall,#menubtn {
+ display:block;
+ }
+ .mylarge{
+ display:none;
+ }
+ #mymenu {
+ position: relative;
+ top: 0px !important;
+ left: 0px !important;
+ }
+}
+
+@media screen and (min-width: 979px) {
+ .mysmall,#menubtn {
+ display:none;
+ }
+ .mylarge {
+ display:block;
+ }
+
+ #mymenu {
+ position: absolute !important;
+ top: -9999px !important;
+ left: -9999px !important;
+ }
+}
+
+#mymenu {
+all:initial;
+width:200px;
+}
+
+#mymenu a {
+background-color:#00407a;
+color:white;
+display:block;
+padding:8px;
+text-decoration:none;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+}
+
 p.all,span.all {
 background-image: url("img/photos.png");
 width:75px;
@@ -5,13 +49,18 @@ height:100px;
 border:none;
 display:inline-block;
 overflow:hidden;
-transition: width 0s;
+transition:width 0s;
 margin:auto;
 display:table;
 }
 
-.myleft {
+.myblue {
+display: flex;
+flex-wrap: wrap;
+background-color:#d4e7f3;
+max-width:780px;
 float:left;
+padding:20px;
 }
 
 span.jr {
@@ -70,7 +119,23 @@ font-size: 0.9em;
 
 figure {
 float:left;
-width:150px;
-margin:0pt;
-padding:0pt;
+width:145px;
+margin:0px;
+padding:0px;
+}
+
+img.educimg {
+padding:0px;
+margin-right:10px;
+width:75px;
+height:75px;
+float:left;
+border:1px solid blue;
+}
+
+div.myrow {
+position:relative;
+overflow:hidden;
+z-index:90;
+margin-top:10px;
 }

@@ -8,8 +8,8 @@
 <link rel="icon" type="image/png" href="img/favicon.png">
 <link rel="canonical" href="https://medchemrega.github.io">
 <link href="https://fonts.googleapis.com/css2?family=Material+Icons&amp;family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" media="all" rel="stylesheet" type="text/css">
-<link href="styles.css" media="all" rel="stylesheet" type="text/css">
 <link href="https://stijl.kuleuven.be/releases/600/css/wms.css" media="all" rel="stylesheet" type="text/css">
+<link href="styles.css" media="all" rel="stylesheet" type="text/css">
 </head>
 
 <body id="visual-portal-wrapper">
@@ -18,46 +18,53 @@
 <!-- GLOBAL HEADER -->
 <nav class="global-header 800 noindex hidden-print">
   <div class="container">
-
     <div class="logoblock">
+      <A class="navbar-brand" HREF='#' onclick="console.log('OK');getElementById('mymenu').style.display='block';return false;" id="menubtn"><i class="material-icons" SIZE="50px">menu</i></A>
       <a class="navbar-brand" href="https://www.kuleuven.be/kuleuven/"><img alt="logo-kuleuven" src="https://stijl.kuleuven.be/releases/latest/img/svg/logo.svg" width="120"></a>
       <a href="https://www.kuleuven.be/600/"><img alt="logo-600" src="https://stijl.kuleuven.be/releases/600a/img/600/logo-600-white.png" width="80"></a>
     </div>
-
     <div class="controls">
       <a class="btn btn-ext btn-home" href="https://www.kuleuven.be/kuleuven/">KU Leuven Home</a>
     </div>
-
   </div>
 </nav>
-<!-- END GLOBAL HEADER -->
+<!-- END GLOBAL HEADER --> 
 
- <!-- LOCAL HEADER -->
-<nav class="local-header">
+<!-- LOCAL HEADER -->
+<nav class="local-header 800 mylarge">
   <div class="container container-relative">
     <nav class="nav-header">
       <h2><a href="index.html"><i class="material-icons">home</i> LABORATORY FOR MEDICINAL CHEMISTRY</a></h2>
     </nav>
-    <nav class="nav-tabs nav-more collapse" id="local-header">
-      <ul id="portal-globalnav">
-        <li><a href="research.html">research</a></li>
-        <li><a href="publi.html">publications</a></li>
-        <li><a href="educ.html">education</a></li>
-        <li><a href="currstaff.html">staff</a></li>
-        <li><a href="alumni.html">alumni</a></li>
+    <nav class="nav-tabs">
+      <ul>
+        <li style="text-align:left;"><a href="research.html">research</a>
+        <li style="text-align:left;"><a href="publi.html">publications</a></li>
+        <li style="text-align:left;"><a href="educ.html">education</a></li>
+        <li style="text-align:left;"><a href="currstaff.html">staff</a></li>
+        <li style="text-align:left;"><a href="alumni.html">alumni</a></li>
       </ul>
     </nav>
   </div>
+</nav>
+<nav style="display:none;" class="mysmall" id="mymenu">
+<a href="index.html"><i class="material-icons">home</i> MEDCHEM LAB</a>
+<a href="research.html">research</a>
+<a href="publi.html">publications</a>
+<a href="educ.html">education</a>
+<a href="currstaff.html">staff</a>
+<a href="alumni.html">alumni</a>
 </nav>
 <!-- END LOCAL HEADER -->
  
 <!-- MAIN CONTENT-->
 <div class="main">
+
 <div class= "container">
 
 <div CLASS="myrow" style="position:relative;overflow:hidden;z-index:90;margin-top:10px;">
 
-<DIV style="float:right;position:relative;width:375px;z-index:100;" class="hidden-print">
+<DIV style="float:right;position:relative;width:375px;" class="hidden-print mylarge">
 <div class="noindex static card card-gray">
 <div class="card-block">
   <h3>Links</h3>
@@ -123,7 +130,22 @@
 for a complete list of publications, see <A HREF='https://lirias.kuleuven.be/cv?u=U0004247'>lirias database</A> or <A HREF='http://www.ncbi.nlm.nih.gov/pubmed?term=lescrinier%20e'>PubMed</A>.
 
 
+
 </div><!-- myrow -->
+
+<div class="noindex static card card-gray hidden-print mysmall">
+  <h3>Links</h3>
+  <ul>
+  <li><a href="http://rega.kuleuven.be">Rega Institute</a>
+  <li><a href="http://pharm.kuleuven.be">Pharmaceutical Sciences</a>
+  <li><a href="http://gbiomed.kuleuven.be/english/research/50000715/">Dep. Pharmacy and Pharmacology</a></li>
+  </ul>
+  <h3>Contact MedChem</h3>
+  <ul>
+  <li><a href="contact.html">Contact info</a>
+  <li><a href="map.html">Map</a>
+  </ul>
+</div>
 
 <!-- LOCAL FOOTER-->
 <footer class="local-footer">

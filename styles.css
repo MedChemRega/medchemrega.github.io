@@ -63,6 +63,10 @@ float:left;
 padding:20px;
 }
 
+.myleft {
+float:left;
+}
+
 span.jr {
 background-position: 0px -100px;
 }

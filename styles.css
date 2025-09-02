@@ -29,6 +29,7 @@
 #mymenu {
 all:initial;
 width:200px;
+margin:0px;
 }
 
 #mymenu a {

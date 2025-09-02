@@ -41,6 +41,28 @@ font-family: Arial, Helvetica, sans-serif;
 font-weight: bold;
 }
 
+ul.mylist, {
+list-style: none;
+margin-left:0;
+padding-left:0;
+}
+
+.mylist li {
+  padding-left:0;
+  margin-bottom:-0.25em;
+  margin-left:-1.25em;
+  text-indent:-1em;
+  display:block;
+}
+
+.mylist li:before {
+
+  content:"\203a";
+  padding:0.25em;
+  font-size:130%;
+  color:#2596be;
+}
+
 p.all,span.all {
 background-image: url("img/photos.png");
 width:75px;
